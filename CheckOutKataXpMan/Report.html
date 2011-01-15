@@ -1,0 +1,192 @@
+<html>
+<head>
+  <title>Machine.Specifications Report</title>
+  <style type="text/css">body {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: .9em;
+}
+
+.count {
+  color: lightgrey;
+}
+
+.failure, .notimplemented, .ignored {
+  color: red;
+  font-weight: bold;
+  display: inline;
+}
+
+.notimplemented {
+  color: orange;
+}
+
+.ignored {
+  color: gold;
+}
+
+p.exception_type {
+  color: black;
+  font-weight: bold;
+  display: inline;
+}
+
+pre.exception_message {
+  border-style: dashed;
+  border-color: #FF828D;
+  border-width: thin;
+  background-color: #FFD2CF;
+  white-space: pre-wrap; /* CSS2.1 compliant */
+  white-space: -moz-pre-wrap; /* Mozilla-based browsers */
+  white-space: o-pre-wrap; /* Opera 7+ */
+  padding: 1em;
+}
+
+hr {
+  color: lightgrey;
+  border: 1px solid lightgrey;
+  height: 1px;
+}
+
+ul.prev-next {
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+  }
+  
+.spec ul.prev-next {
+  float: right;
+  right: 30%;
+  position: absolute;
+  margin-top: -1em;
+  }
+
+ul.prev-next li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+ul.prev-next li a {
+  color: lightgrey;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 .3em;
+  border: 1px solid lightgrey;
+}
+
+ul.prev-next li.failure a {
+  border-color: red;
+}
+
+ul.prev-next li.notimplemented a {
+  border-color: orange;
+}
+
+ul.prev-next li.ignored a {
+  border-color: gold;
+}
+
+ul.prev-next li.failure a:hover {
+  background-color: red;
+  color: #fff;
+}
+
+ul.prev-next li.notimplemented a:hover {
+  background-color: orange;
+  color: #000;
+}
+
+ul.prev-next li.ignored a:hover {
+  background-color: gold;
+  color: #000;
+}
+
+ul.prev-next li.back a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+div.supplement {
+  display: none;
+}
+  
+@media print {
+  ul.prev-next {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+  <ul class="prev-next"><li class="failure">
+      <a href="#1">Go to first failed specification &dArr;</a>
+    </li>
+  </ul>
+<h1>
+    CheckOutKataXpMan
+</h1>
+<h2 class="count">
+  1 concern,
+  1 context,
+  1 specification,
+    <span class="failure">1 failure</span>
+</h2>
+
+  <hr/>
+  <hr/>
+<h2 class="concern">
+  SKU specifications
+</h2>
+<h3 class="count">
+  1 context, 1 specification
+</h3><h3 class="context">
+  WhenAskingForAPrice
+</h3>
+<h4 class="count">
+  1 specification
+</h4><ul><li class="spec"><a name="1">gives 50 when asking price of A</a>
+
+  <div class="failure">
+    &lArr; FAILED
+    <ul class="prev-next">
+      <li class="failure">
+      </li>
+      <li class="failure">
+      </li>
+    </ul>
+  </div>
+  <p class="exception_type">
+    SpecificationException
+  </p>
+  <pre class="exception_message">Machine.Specifications.SpecificationException: Should equal [30] but is [50]
+   at Machine.Specifications.ShouldExtensionMethods.ShouldEqual[T](T actual, T expected) in d:\BuildAgent-02\work\38fe83de684fd902\Source\Machine.Specifications\ExtensionMethods.cs:line 151
+   at CheckOutKataXpMan.WhenAskingForAPrice.&lt;.ctor&gt;b__2() in C:\Users\John\Code\CheckOutKataXpMan\CheckOutKataXpMan\WhenAskingForAPrice.cs:line 15
+   at Machine.Specifications.Model.Specification.InvokeSpecificationField() in d:\BuildAgent-02\work\38fe83de684fd902\Source\Machine.Specifications\Model\Specification.cs:line 75
+   at Machine.Specifications.Model.Specification.Verify() in d:\BuildAgent-02\work\38fe83de684fd902\Source\Machine.Specifications\Model\Specification.cs:line 53</pre>
+
+
+
+
+<script type="text/javascript">
+  function toggleVisibility(id, description)
+  {
+    var section = document.getElementById(id);
+    var link = document.getElementById(id + "_link");
+
+    if (section.style.display == "block")
+    {
+      section.style.display = "none";
+      link.innerHTML = "Show " + description;
+    } else
+    {
+      section.style.display = "block";
+      link.innerHTML = "Hide " + description;
+    }
+  };
+</script> 
+
+          </li>
+        </ul>
+    <hr/>
+</body>
+</html>
