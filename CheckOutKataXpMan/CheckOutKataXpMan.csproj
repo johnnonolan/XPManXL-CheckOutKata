@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Catalogue.cs" />
+    <Compile Include="Argos.cs" />
     <Compile Include="EventDefinition1.cs" />
     <Compile Include="ShoppingCart.cs" />
     <Compile Include="WhehCheckingOut.cs" />
